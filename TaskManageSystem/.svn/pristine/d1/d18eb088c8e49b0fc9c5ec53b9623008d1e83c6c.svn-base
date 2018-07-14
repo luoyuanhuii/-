@@ -1,0 +1,14 @@
+package com.gxun.task.mapper;
+
+import java.util.List;
+
+import com.gxun.task.entity.Student;
+import com.gxun.task.entity.Teacher;
+import com.gxun.task.entity.Text;
+
+public interface UserMapper {
+	Student qryByUnameAndPwd(String account, String pwd);
+	Teacher qryTeacher(String account, String pwd);
+	List<Text> selectText(String msg);
+	List<Text> selectScore(String msg);
+}

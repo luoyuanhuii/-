@@ -1,0 +1,6 @@
+package com.gxun.task.service;
+
+public interface IUserService {
+	boolean isValidUser(String account, String pwd);
+	boolean isValidteacher(String account, String pwd);
+}

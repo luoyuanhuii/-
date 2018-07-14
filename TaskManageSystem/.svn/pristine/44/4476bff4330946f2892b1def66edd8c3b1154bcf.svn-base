@@ -1,0 +1,13 @@
+package com.gxun.task.controller;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Select;
+
+
+import com.gxun.task.service.StudentService;
+
+public class StudentController {
+StudentService studentService;
+
+}

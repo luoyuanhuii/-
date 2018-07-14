@@ -1,0 +1,20 @@
+package com.gxun.task.service.impl;
+
+import java.util.List;
+
+
+
+import com.gxun.task.entity.Text;
+import com.gxun.task.mapper.UserMapper;
+
+
+public class StudentService implements com.gxun.task.service.StudentService {
+    UserMapper userMapper;
+	@Override
+	public List<Text> selectJob(String gread) {
+		  List<Text> text = userMapper.selectText(gread);
+	        return text;
+	    
+	}
+
+}
